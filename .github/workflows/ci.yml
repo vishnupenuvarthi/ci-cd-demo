@@ -1,0 +1,14 @@
+name: My First CI Pipeline
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Print Message
+        run: echo "Hello Vishnu, your CI pipeline is running!"
